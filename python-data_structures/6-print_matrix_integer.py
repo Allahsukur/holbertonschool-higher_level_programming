@@ -7,4 +7,3 @@ def print_matrix_integer(matrix=[[]]):
             if column < len(matrix[row]) - 1:
                 print(end=" ")
         print()
-        

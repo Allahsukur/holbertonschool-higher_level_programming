@@ -1,15 +1,12 @@
 #!/usr/bin/python3
-"""A module that defines a Square class with a private size attribute."""
+'''
+This module 1-square right now it is empty
+'''
 
 
 class Square:
-    """A class that defines a square with a private size attribute."""
-    
+    '''
+    Square class is empty
+    '''
     def __init__(self, size):
-        """Initialize a new Square instance with a given size.
-        
-        Args:
-            size: The size of the square (no type or value verification).
-        """
         self.__size = size
-        

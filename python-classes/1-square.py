@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""A module that defines a Square class with a private size attribute."""
+"""
+A module that defines a Square class with a private size attribute.
+"""
 
 
 class Square:

@@ -106,4 +106,3 @@ class Rectangle:
             e.g. 'Rectangle(2, 4)'.
         """
         return f"Rectangle({self.__width}, {self.__height})"
-    

@@ -16,20 +16,19 @@ class SimpleAPIHandler(http.server.BaseHTTPRequestHandler):
         """
         Handle GET requests for different endpoints
         """
-        # Set default headers
-        self.send_response(200)
-        self.send_header('Content-type', 'text/plain')
-        self.send_header('Access-Control-Allow-Origin', '*')
-        self.end_headers()
-        
         # Route requests based on path
         if self.path == '/':
-            # Root endpoint
+            # Root endpoint - return simple text response
+            self.send_response(200)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            
             response = "Hello, this is a simple API!"
             self.wfile.write(response.encode('utf-8'))
             
         elif self.path == '/data':
-            # JSON data endpoint
+            # JSON data endpoint - return JSON with proper content type
+            self.send_response(200)
             self.send_header('Content-type', 'application/json')
             self.end_headers()
             
@@ -42,12 +41,17 @@ class SimpleAPIHandler(http.server.BaseHTTPRequestHandler):
             self.wfile.write(response.encode('utf-8'))
             
         elif self.path == '/status':
-            # Status endpoint
+            # Status endpoint - return OK
+            self.send_response(200)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            
             response = "OK"
             self.wfile.write(response.encode('utf-8'))
             
         elif self.path == '/info':
-            # Info endpoint
+            # Info endpoint - return API information in JSON
+            self.send_response(200)
             self.send_header('Content-type', 'application/json')
             self.end_headers()
             
@@ -95,4 +99,4 @@ def run_server(port=8000):
 
 
 if __name__ == "__main__":
-    run_server() 
+    run_server()

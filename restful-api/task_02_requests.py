@@ -64,4 +64,4 @@ def fetch_and_save_posts():
     except requests.RequestException as e:
         print(f"Error fetching posts: {e}")
     except IOError as e:
-        print(f"Error writing to CSV file: {e}")
+        print(f"Error writing to CSV file: {e}") 

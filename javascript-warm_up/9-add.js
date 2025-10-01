@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 const a = Number(process.argv[2])
 const b = Number(process.argv[3])
 

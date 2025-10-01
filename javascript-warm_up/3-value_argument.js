@@ -1,2 +1,2 @@
 #!/usr/bin/node
-console.log(process.argv[2] || "HBTN");
+console.log(process.argv[2] || "No argument");

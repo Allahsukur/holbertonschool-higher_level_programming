@@ -1,4 +1,4 @@
-#!usr/bin/node
+#!/usr/bin/node
 const x = process.argv[2];
 const count = parseInt(x);
 
